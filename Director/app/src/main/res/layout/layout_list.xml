@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/aliceblue"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tv_graph"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y30"
+        android:layout_gravity="center_horizontal"
+        android:paddingLeft="@dimen/x15"
+        android:background="@drawable/selector_white"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:text="图形显示"
+        android:textColor="@color/black"
+        android:textSize="@dimen/x15"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray"/>
+
+    <TextView
+        android:id="@+id/tv_table"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y30"
+        android:layout_gravity="center_horizontal"
+        android:paddingLeft="@dimen/x15"
+        android:background="@drawable/selector_white"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:text="表格显示"
+        android:textColor="@color/black"
+        android:textSize="@dimen/x15"/>
+</LinearLayout>

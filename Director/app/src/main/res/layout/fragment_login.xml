@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/aliceblue"
+                android:orientation="vertical">
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/layout_action_bar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_bar"
+        android:layout_margin="@dimen/x15"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/x15">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/phone_number"
+                android:textColor="@color/black"
+                android:textSize="@dimen/x15"/>
+
+            <EditText
+                android:id="@+id/input_account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x15"
+                android:layout_marginStart="@dimen/x15"
+                android:background="@null"
+                android:hint="@string/number_hit"
+                android:inputType="phone"
+                android:singleLine="true"
+                android:textColor="@color/ivory_black"
+                android:textColorHint="@color/darkgray"
+                android:textSize="@dimen/x15"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="1px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/x15">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/password"
+                android:textColor="@color/ivory_black"
+                android:textSize="@dimen/x15"/>
+
+            <EditText
+                android:id="@+id/input_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x15"
+                android:layout_marginStart="@dimen/x15"
+                android:background="@null"
+                android:hint="@string/password_hint"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:textColor="@color/ivory_black"
+                android:textColorHint="@color/darkgray"
+                android:textSize="@dimen/x15"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/x15">
+
+            <CheckBox
+                android:id="@+id/cb_show_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:clickable="true"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:text="@string/show_password"
+                android:textColor="@color/ivory_black"
+                android:textSize="@dimen/x15"
+                android:textStyle="normal"/>
+
+            <CheckBox
+                android:id="@+id/cb_save_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:clickable="true"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:text="@string/remember_password"
+                android:textColor="@color/ivory_black"
+                android:textSize="@dimen/x15"
+                android:textStyle="normal"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_login"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x40"
+            android:background="@drawable/selector_blue"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/login"
+            android:textColor="@color/snow"
+            android:textSize="@dimen/x15"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/x40"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="@string/new_user_register"
+        android:textColor="@color/black"
+        android:textSize="@dimen/x15"
+        android:textStyle="normal"/>
+
+</RelativeLayout>

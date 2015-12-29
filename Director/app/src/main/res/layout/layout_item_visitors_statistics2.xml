@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/result_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y35"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_name"
+            style="@style/tv_moderate"
+            android:layout_height="match_parent"
+            />
+
+        <include layout="@layout/layout_line_vertical"/>
+
+        <TextView
+            android:id="@+id/tv_mzrs"
+            style="@style/tv_shot"
+            android:layout_height="match_parent"
+            />
+
+        <include layout="@layout/layout_line_vertical"/>
+
+        <TextView
+            android:id="@+id/tv_rycs"
+            style="@style/tv_shot"
+            android:layout_height="match_parent"
+            />
+
+        <include layout="@layout/layout_line_vertical"/>
+
+        <TextView
+            android:id="@+id/tv_cyrs"
+            style="@style/tv_shot"
+            android:layout_height="match_parent"
+            />
+
+        <include layout="@layout/layout_line_vertical"/>
+
+        <TextView
+            android:id="@+id/tv_mzfy"
+            style="@style/tv_shot"
+            android:layout_height="match_parent"
+            />
+
+        <include layout="@layout/layout_line_vertical"/>
+
+        <TextView
+            android:id="@+id/tv_zyfy"
+            style="@style/tv_shot"
+            android:layout_height="match_parent"
+            />
+
+        <include layout="@layout/layout_line_vertical"/>
+
+        <TextView
+            android:id="@+id/tv_jy"
+            style="@style/tv_shot"
+            android:layout_height="match_parent"
+            />
+
+        <include layout="@layout/layout_line_vertical"/>
+
+        <TextView
+            android:id="@+id/tv_mzrjfy"
+            style="@style/tv_shot"
+            android:layout_height="match_parent"
+            />
+
+        <include layout="@layout/layout_line_vertical"/>
+
+        <TextView
+            android:id="@+id/tv_zyrjfy"
+            style="@style/tv_shot"
+            android:layout_height="match_parent"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

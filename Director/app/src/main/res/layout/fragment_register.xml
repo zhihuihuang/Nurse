@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/aliceblue"
+              android:orientation="vertical">
+
+    <include layout="@layout/layout_action_bar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/x5"
+        android:orientation="vertical"
+        android:padding="@dimen/x5">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/y40"
+            android:layout_marginTop="@dimen/x4"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/x4">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/x4"
+                android:text="@string/chanage_org"
+                android:textColor="@color/ivory_black"
+                android:textSize="@dimen/x15"/>
+
+            <TextView
+                android:id="@+id/tv_organization"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/spinner_bg_state"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:padding="@dimen/x4"
+                android:singleLine="true"
+                android:text="@string/org_name"
+                android:textColor="@color/ivory_black"
+                android:textSize="@dimen/x15"/>
+        </LinearLayout>
+
+
+        <include layout="@layout/layout_line_horizontal"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/y40"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/x4">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/x4"
+                android:text="@string/register_phonenumber"
+                android:textColor="@color/ivory_black"
+                android:textSize="@dimen/x15"/>
+
+            <EditText
+                android:id="@+id/input_moblie"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="@string/number_hit"
+                android:inputType="phone"
+                android:singleLine="true"
+                android:textColor="@color/ivory_black"
+                android:textSize="@dimen/x15"/>
+        </LinearLayout>
+
+        <include layout="@layout/layout_line_horizontal"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/y40"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/x4">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/x4"
+                android:text="@string/register_password"
+                android:textColor="@color/ivory_black"
+                android:textSize="@dimen/x15"/>
+
+            <EditText
+                android:id="@+id/input_password"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="@string/password_hint"
+                android:inputType="textPassword"
+                android:textColor="@color/ivory_black"
+                android:textSize="@dimen/x15"/>
+        </LinearLayout>
+
+        <include layout="@layout/layout_line_horizontal"/>
+
+        <TextView
+            android:id="@+id/tv_register"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x40"
+            android:layout_marginTop="@dimen/x10"
+            android:background="@drawable/selector_blue"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/register"
+            android:textColor="@color/white"
+            android:textSize="@dimen/x15"/>
+    </LinearLayout>
+
+</LinearLayout>

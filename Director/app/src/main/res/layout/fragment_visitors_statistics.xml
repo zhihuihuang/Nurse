@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.guc.bureau2.widget.SlideTitleLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/aliceblue"
+              android:orientation="vertical">
+
+    <include layout="@layout/layout_action_bar"/>
+
+    <include layout="@layout/layout_datepicker"/>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/result_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y30"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_title_name"
+                    style="@style/tv_shot"
+                    android:layout_height="match_parent"
+                    android:text="@string/name"/>
+
+                <include layout="@layout/layout_line_vertical"/>
+
+                <TextView
+                    style="@style/tv_shot"
+                    android:layout_height="match_parent"
+                    android:text="@string/mzrc"/>
+
+                <include layout="@layout/layout_line_vertical"/>
+
+                <TextView
+                    style="@style/tv_shot"
+                    android:layout_height="match_parent"
+                    android:text="@string/rycs"/>
+
+                <include layout="@layout/layout_line_vertical"/>
+
+                <TextView
+                    style="@style/tv_shot"
+                    android:layout_height="match_parent"
+                    android:text="@string/cyrs"/>
+
+                <include layout="@layout/layout_line_vertical"/>
+
+                <TextView
+                    style="@style/tv_shot"
+                    android:layout_height="match_parent"
+                    android:text="@string/mzfy"/>
+
+                <include layout="@layout/layout_line_vertical"/>
+
+                <TextView
+                    style="@style/tv_shot"
+                    android:layout_height="match_parent"
+                    android:text="@string/zyfy"/>
+
+                <include layout="@layout/layout_line_vertical"/>
+
+                <TextView
+                    style="@style/tv_shot"
+                    android:layout_height="match_parent"
+                    android:text="@string/jy"/>
+
+                <include layout="@layout/layout_line_vertical"/>
+
+                <TextView
+                    style="@style/tv_shot"
+                    android:layout_height="match_parent"
+                    android:text="@string/mzrjfy"/>
+
+                <include layout="@layout/layout_line_vertical"/>
+
+                <TextView
+                    style="@style/tv_shot"
+                    android:layout_height="match_parent"
+                    android:text="@string/zyrjfy"/>
+
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/listView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</com.guc.bureau2.widget.SlideTitleLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <include layout="@layout/layout_action_bar"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y90"
+        android:src="@mipmap/ic_home_image"
+        android:scaleType="fitXY">
+    </ImageView>
+
+
+    <com.guc.bureau2.widget.LineGridView
+        android:id="@+id/gridview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="3"/>
+</LinearLayout>

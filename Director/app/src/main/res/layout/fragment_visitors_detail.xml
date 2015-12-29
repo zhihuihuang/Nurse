@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/aliceblue"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_action_bar" />
+    <include layout="@layout/layout_datepicker"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/x5"
+        android:background="@color/white"
+        android:fillViewport="true"
+        android:scrollbarSize="@dimen/x12"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/result_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:visibility="visible" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/gainsboro" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="@dimen/x100"
+                        android:layout_height="@dimen/x45"
+                        android:gravity="center"
+                        android:text="@string/mzrc"
+                        android:textColor="@color/ivory_black"
+                        android:textSize="@dimen/x15" />
+
+                    <TextView
+                        android:id="@+id/mzrc"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/x45"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/dimgray"
+                        android:textSize="@dimen/x15" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/gainsboro" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="@dimen/x100"
+                        android:layout_height="@dimen/x45"
+                        android:gravity="center"
+                        android:text="@string/zyrc"
+                        android:textColor="@color/ivory_black"
+                        android:textSize="@dimen/x15" />
+
+                    <TextView
+                        android:id="@+id/zyrc"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/x45"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/dimgray"
+                        android:textSize="@dimen/x15" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/gainsboro" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/error_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/erroy_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/check_fail"
+                    android:textColor="@color/darkgray"
+                    android:textSize="@dimen/x15" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

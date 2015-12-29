@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/aliceblue"
+              android:orientation="vertical">
+
+    <include layout="@layout/layout_action_bar"/>
+
+    <include layout="@layout/layout_datepicker"/>
+
+    <LinearLayout
+        android:id="@+id/error_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/erroy_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/check_fail"
+            android:textColor="@color/darkgray"
+            android:textSize="@dimen/x15"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/result_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/x5"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/tv_deuce"
+                android:text="@string/diagname"/>
+
+            <TextView
+                style="@style/tv_deuce"
+                android:text="@string/amount1"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/gainsboro"/>
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="@color/transparent"
+            android:divider="@color/gainsboro"
+            android:dividerHeight="1px"
+            android:drawSelectorOnTop="false"
+            android:listSelector="@color/transparent"
+            android:scrollbars="none">
+        </ListView>
+    </LinearLayout>
+
+</LinearLayout>

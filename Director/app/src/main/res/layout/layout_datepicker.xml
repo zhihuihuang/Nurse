@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/y35"
+              android:background="@color/white"
+              android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tv_start_date"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="@dimen/x15"/>
+
+    <TextView
+        android:id="@+id/tv_end_date"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="@dimen/x15"/>
+
+    <TextView
+        android:id="@+id/tv_query"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.3"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="@string/query"
+        android:textColor="@color/black"
+        android:textSize="@dimen/x15"/>
+
+</LinearLayout>

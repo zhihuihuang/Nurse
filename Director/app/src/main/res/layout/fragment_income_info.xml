@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/aliceblue"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_action_bar" />
+    <include layout="@layout/layout_datepicker"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:background="@color/white"
+        android:fillViewport="true"
+        android:scrollbarSize="12dp"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/result_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:visibility="visible" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/gainsboro" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="45dp"
+                        android:gravity="center"
+                        android:text="@string/mz_charge"
+                        android:textColor="@color/ivory_black" />
+
+                    <TextView
+                        android:id="@+id/mz_charge"
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_weight="1"
+                        android:textColor="@color/dimgray"
+                        android:gravity="center_vertical" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/gainsboro" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="45dp"
+                        android:gravity="center"
+                        android:text="@string/zy_charge"
+                        android:textColor="@color/ivory_black" />
+
+                    <TextView
+                        android:id="@+id/zy_charge"
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_weight="1"
+                        android:textColor="@color/dimgray"
+                        android:gravity="center_vertical" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/gainsboro" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="45dp"
+                        android:gravity="center"
+                        android:text="@string/total_charge_zl"
+                        android:textColor="@color/ivory_black" />
+
+                    <TextView
+                        android:id="@+id/total_charge_zl"
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_weight="1"
+                        android:textColor="@color/dimgray"
+                        android:gravity="center_vertical" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/gainsboro" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="45dp"
+                        android:gravity="center"
+                        android:text="@string/total_charge_yp"
+                        android:textColor="@color/ivory_black" />
+
+                    <TextView
+                        android:id="@+id/total_charge_yp"
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_weight="1"
+                        android:textColor="@color/dimgray"
+                        android:gravity="center_vertical" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/gainsboro" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="45dp"
+                        android:gravity="center"
+                        android:text="@string/yp_rate"
+                        android:textColor="@color/ivory_black" />
+
+                    <TextView
+                        android:id="@+id/yp_rate"
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_weight="1"
+                        android:textColor="@color/dimgray"
+                        android:gravity="center_vertical" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/gainsboro" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="45dp"
+                        android:gravity="center"
+                        android:text="@string/base_charge"
+                        android:textColor="@color/ivory_black" />
+
+                    <TextView
+                        android:id="@+id/base_charge"
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_weight="1"
+                        android:textColor="@color/dimgray"
+                        android:gravity="center_vertical" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/gainsboro" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="45dp"
+                        android:gravity="center"
+                        android:text="@string/base_rate"
+                        android:textColor="@color/ivory_black" />
+
+                    <TextView
+                        android:id="@+id/base_rate"
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_weight="1"
+                        android:textColor="@color/dimgray"
+                        android:gravity="center_vertical" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/gainsboro" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="45dp"
+                        android:gravity="center"
+                        android:text="@string/total_charge"
+                        android:textColor="@color/red" />
+
+                    <TextView
+                        android:id="@+id/total_charge"
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_weight="1"
+                        android:textColor="@color/orangered"
+                        android:gravity="center_vertical" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/gainsboro" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/error_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/erroy_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/check_fail"
+                    android:textColor="@color/darkgray"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/aliceblue"
+              android:orientation="vertical">
+
+    <include layout="@layout/layout_action_bar"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/x5"
+        android:text="@string/drug_top20"
+        android:textSize="@dimen/x13"/>
+
+    <include layout="@layout/layout_datepicker"/>
+
+    <include layout="@layout/layout_item_drugtopinfo"/>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/gainsboro"
+        android:dividerHeight="1px"
+        android:scrollbars="none"/>
+
+</LinearLayout>
